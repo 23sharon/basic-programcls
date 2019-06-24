@@ -77,9 +77,31 @@ print(c)
     15
     4
     
- ************888
+ *********************print the largest palindrome in a sentence without reverdse function**********************8
 
 
+str=input()
+n=len(str)
+slnd=elnd=0
+for i in range(n):
+    for j in range(n-1,i,-1):
+        ind1=i 
+        ind2=j 
+        while ind1<ind2:
+            if str[ind1]!=str[ind2]:
+                break
+            ind1+=1
+            ind2-=1
+        if ind1>=ind2:
+            if j-i>elnd-slnd:
+                slnd=i
+                elnd=j
+print(str[slnd:elnd+1])
+o/p:
+
+my madam's mother tongue is malayalam
+malayalam
+            
 
 
 
