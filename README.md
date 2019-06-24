@@ -1,19 +1,23 @@
 # basic-programcls
 
 
-*************************salary increment by holding a single value*****************
+*************************Salary Increment by holding a single value*****************
 n=list(map(int,input().split()))
 m=min(n)
 while True:
-    x=n.index(len(n)):
-    for i in range(len(n))):
+    x=n.index(max(n))
+    for i in range(len(n)):
         if i!=x:
-            m[i]+=1
-    if len(set(n)==1):
+            n[i]+=1
+    if len(set(n))==1:
         print(n[0]-m)
         break
-
-**************************bubble sort**********************
+        
+        o/p
+         ==================
+5 1 2 4 3
+10
+**************************Bubble sort**********************
 
 a=list(map(int,input().split()))
 for i in range(len(a)):
@@ -27,7 +31,7 @@ o/p:
     5 7 2 8 1
     1 2 5 7 8 
     
-   *******************selection sort********************
+   *******************Selection sort********************
 a=list(map(int,input().split()))
 for i in range(len(a)):
     min=i
@@ -43,14 +47,37 @@ o/p:
 5 7 2 8 1
 1 2 5 7 8 
 
-**********************merge sort***********************
+**********************Insertion sort***********************
+
+a=list(map(int,input().split()))
+for i in range(len(a)):
+    j=i
+    while j>0:
+        if a[j]<a[j-1]:
+            a[j],a[j-1]=a[j-1],a[j]
+            j=j-1
+        else:
+            break
+print(a)
 
 
-
-
-
-
-
+o/p:
+ 3 4 5 2 1
+ 1 2 3 4 5
+ ***********************count the number of 1's in buinary num**************8
+n=int(input())
+c=0
+while n:
+    n&=n-1
+    c+=1
+print(c)    
+    
+    
+    o/p
+    15
+    4
+    
+ ************888
 
 
 
