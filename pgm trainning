@@ -246,6 +246,53 @@ for i in range(row):
 0 1 0 1 1
 1 0 1 1 1
 
+******************************REVERSE an number*****************************WITHOUT USING division
+n=int(input())
+p=1
+rev=0
+while(n>=p):
+    n1=(n//p)%10
+    rev=rev*10+n1
+    p=p*10
+print(rev)
 
+o/p----------
+9567
+7659
+*******************************************REPLACE A NUMBER******************************
+
+n=int(input())
+d=int(input())
+t=int(input())
+p=1
+val=0
+while(n>=p):
+    r=(n//p)%10
+    if(r==d):
+        r=t
+    val=r*p+val
+    p=p*10
+print(val)
+
+o/p:
+12345
+2
+7
+17345
+
+***************************************ALTERNATE THE DIGITS WITHOUT USING DIGITS***************
+
+
+
+    
+
+
+
+    
+
+
+************************
+    
+    
 
 
